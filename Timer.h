@@ -29,7 +29,9 @@ void scheduleTimers();
  * The arduino sleep() function calls this as well.
  */
 #ifndef ESP8266
+#ifndef ESP32
 extern void yield();
+#endif
 #endif
 
 #ifdef __cplusplus
